@@ -25,6 +25,23 @@ function userFetch() {
   fetch(ENDPOINT)
     .then((resp) => resp.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
+      userToHtml(data);
     });
+}
+
+function userToHtml(userArr) {
+  els.paragraph.classList.add("d-none");
+  userArr.forEach((userObj) => {
+    const divas = document.createElement("div");
+    divas.classList.add("card");
+    const username = document.createElement("h2");
+    username.classList.add("card-text");
+    const picture = document.createElement("img");
+    picture.classList.add("card-img");
+    username.textContent = userObj.login;
+    picture.src = userObj.avatar_url;
+    divas.append(username, picture);
+    els.output.append(divas);
+  });
 }
