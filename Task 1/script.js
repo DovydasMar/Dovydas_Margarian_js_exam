@@ -9,7 +9,7 @@ Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 div elemente su id "output" viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
 "use strict";
-console.log("script.js file was loaded");
+// console.log("script.js file was loaded");
 
 const els = {
   form: document.forms[0],
