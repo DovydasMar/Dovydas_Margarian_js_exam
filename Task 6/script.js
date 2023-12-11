@@ -36,5 +36,5 @@ function getUsersNames(userArr) {
   // userArr.forEach((userObj) => {
   //   userNames.push(userObj.name);
   // });
-  console.log(userNames);
+  // console.log(userNames);
 }
