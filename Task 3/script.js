@@ -27,6 +27,11 @@ function userFetch() {
     .then((data) => {
       // console.log(data);
       userToHtml(data);
+      return;
+    })
+    .catch((error) => {
+      // console.log("klaida", error);
+      return error;
     });
 }
 
