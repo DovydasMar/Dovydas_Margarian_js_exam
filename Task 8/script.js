@@ -30,8 +30,8 @@ class Calculator {
   }
 }
 
-const calculatorius = new Calculator(2, 5);
-calculatorius.sum();
-calculatorius.subtraction();
-calculatorius.multiplication();
-calculatorius.division();
+// const calculatorius = new Calculator(2, 5);
+// calculatorius.sum();
+// calculatorius.subtraction();
+// calculatorius.multiplication();
+// calculatorius.division();
