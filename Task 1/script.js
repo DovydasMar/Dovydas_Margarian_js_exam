@@ -28,50 +28,13 @@ function convertNums() {
   ulEl.className = "unlisted";
   const lbLi = document.createElement("li");
   const pound = els.input.value * 2.2046;
-
-  if (els.input.value === 1) {
-    lbLi.textContent = `${els.input.value} kilogramas = ${pound} svarų`;
-  } else if (els.input.value > 1 && els.input.value < 10) {
-    lbLi.textContent = `${els.input.value} kilogramai = ${pound} svarų`;
-  } else if (els.input.value > 9 && els.input.value <= 20) {
-    lbLi.textContent = `${els.input.value} kilogramų = ${pound} svarų`;
-  } else if (els.input.value.slice(-1) === "0") {
-    lbLi.textContent = `${els.input.value} kilogramų = ${pound} svarų`;
-  } else if (els.input.value.slice(-1) === "1") {
-    lbLi.textContent = `${els.input.value} kilogramas = ${pound} svarų`;
-  } else {
-    lbLi.textContent = `${els.input.value} kilogramai = ${pound} svarų`;
-  }
+  lbLi.textContent = `${els.input.value} kilograms = ${pound} pounds`;
   const gLi = document.createElement("li");
   const gram = els.input.value / 0.001;
-  if (els.input.value === 1) {
-    gLi.textContent = `${els.input.value} kilogramas = ${gram} gramų`;
-  } else if (els.input.value > 1 && els.input.value < 10) {
-    gLi.textContent = `${els.input.value} kilogramai = ${gram} gramų`;
-  } else if (els.input.value > 9 && els.input.value <= 20) {
-    gLi.textContent = `${els.input.value} kilogramų = ${gram} gramų`;
-  } else if (els.input.value.slice(-1) === "0") {
-    gLi.textContent = `${els.input.value} kilogramų = ${gram} gramų`;
-  } else if (els.input.value.slice(-1) === "1") {
-    gLi.textContent = `${els.input.value} kilogramas = ${gram} gramų`;
-  } else {
-    gLi.textContent = `${els.input.value} kilogramai = ${gram} gramų`;
-  }
+  gLi.textContent = `${els.input.value} kilograms = ${gram} grams`;
   const ozLi = document.createElement("li");
   const ounce = els.input.value * 35.274;
-  if (els.input.value === 1) {
-    ozLi.textContent = `${els.input.value} kilogramas = ${ounce} uncijų`;
-  } else if (els.input.value > 1 && els.input.value < 10) {
-    ozLi.textContent = `${els.input.value} kilogramai = ${ounce} uncijų`;
-  } else if (els.input.value > 9 && els.input.value <= 20) {
-    ozLi.textContent = `${els.input.value} kilogramų = ${ounce} uncijų`;
-  } else if (els.input.value.slice(-1) === "0") {
-    ozLi.textContent = `${els.input.value} kilogramų = ${ounce} uncijų`;
-  } else if (els.input.value.slice(-1) === "1") {
-    ozLi.textContent = `${els.input.value} kilogramas = ${ounce} uncijų`;
-  } else {
-    ozLi.textContent = `${els.input.value} kilogramai = ${ounce} uncijų`;
-  }
+  ozLi.textContent = `${els.input.value} kilograms = ${ounce} ounces`;
   ulEl.append(lbLi, gLi, ozLi);
   els.output.append(ulEl);
 }

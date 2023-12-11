@@ -69,10 +69,11 @@
 }
 .card {
   width: 100%;
-  outline: 1px solid black;
   display: flex;
   flex-direction: column;
   background-color: #474747;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .card-img {
   width: 100%;
