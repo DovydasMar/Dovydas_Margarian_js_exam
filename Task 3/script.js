@@ -36,6 +36,7 @@ function userFetch() {
 }
 
 function userToHtml(userArr) {
+  els.output.classList.add("d-grid");
   els.paragraph.classList.add("d-none");
   userArr.forEach((userObj) => {
     const divas = document.createElement("div");
