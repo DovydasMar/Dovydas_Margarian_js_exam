@@ -19,16 +19,19 @@ const users = [
   { id: "8", name: "Simon Peterson", age: 30, hasDog: false },
   { id: "9", name: "Daniel Cane", age: 51, hasDog: true },
 ];
-filterDogOwners(users);
+const dogOwners = filterDogOwners(users);
 function filterDogOwners(usersArr) {
   //atsakymas dogOwner
   const dogOwner = usersArr.filter((userObj) => {
-    // console.log(userObj);
+    // console.log(userObj.hasDog);
     return userObj.hasDog;
   });
+  return dogOwner;
   // console.log(dogOwner);
 }
-filterAdults(users);
+// console.log("dogOwners ===", dogOwners);
+
+const usersOfLegalAge = filterAdults(users);
 function filterAdults(userArr) {
   //atsakymas legalAge
   const legalAge = userArr.filter((userObj) => {
@@ -36,4 +39,6 @@ function filterAdults(userArr) {
     return userObj.age > 18;
   });
   // console.log(legalAge);
+  return legalAge;
 }
+// console.log("usersOfLegalAge ===", usersOfLegalAge);

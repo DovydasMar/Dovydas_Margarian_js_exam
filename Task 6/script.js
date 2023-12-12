@@ -19,7 +19,7 @@ const users = [
   { id: "8", name: "Simon Peterson", age: 30 },
   { id: "9", name: "Daniel Cane", age: 51 },
 ];
-getUserAverageAge(users);
+const vidAmzius = getUserAverageAge(users);
 function getUserAverageAge(userArr) {
   let ageOfUsers = 0;
   userArr.forEach((userObj) => {
@@ -27,14 +27,18 @@ function getUserAverageAge(userArr) {
   });
   // console.log(ageOfUsers);
   const averageAge = ageOfUsers / userArr.length;
+  return averageAge;
   // console.log(averageAge);
 }
+// console.log(vidAmzius);
 
-getUsersNames(users);
+const userVardai = getUsersNames(users);
 function getUsersNames(userArr) {
   const userNames = userArr.map((userObj) => userObj.name);
-  // userArr.forEach((userObj) => {
+  // const userNames = userArr.forEach((userObj) => {
   //   userNames.push(userObj.name);
   // });
+  return userNames;
   // console.log(userNames);
 }
+// console.log(userVardai);
